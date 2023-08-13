@@ -10,7 +10,7 @@ async function readPosts(){
         postArea.innerHTML = '';
         for( let i in json){
             let postHtml = `<div><h1>${json[i].title}</h1> ${json[i].body}</div>  <hr>`;
-            postArea.innerHTML += postHtml;
+            postArea.innerHTML += postHtml; // não é  a melhor forma de fazer 
         }
     }
     else {
